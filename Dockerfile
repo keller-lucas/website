@@ -6,7 +6,7 @@ WORKDIR /usr/local/website
 COPY ./ /usr/local/website
 
 RUN npm install
-RUN npm run build
+RUN npm run build --prod
 
 
 FROM nginx:latest
